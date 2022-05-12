@@ -8,7 +8,7 @@ clang version 12.0.1
 使用 `nix expression` 来进行管理环境依赖。基于 `NIX_CFLAGS_COMPILE` 以及 `NIX_LDFLAGS` 环境变量寻找到所依赖的包，而环境变量的值由nix进行设定。
 
 [相关参考](https://nixos.wiki/wiki/C)
-### 预置环境 
+### preset-env
 ```c
 #include <stdatomic.h>
 #include <stdatomic.h>

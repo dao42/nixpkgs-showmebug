@@ -78,7 +78,7 @@ pkgs.mkShell {
 | :--: | :-------------------------------------: | :----------------: | :----------------: | :------------------------------------------: |
 |  1   |           [bash](doc/bash.md)           |                    |                    |                                              |
 |  2   |            [C++](doc/C++.md)            | :white_check_mark: | :white_check_mark: |         [C++](doc/C++.md#preset-env)         |
-|  3   |         [C language](Clang.md)          | :white_check_mark: | :white_check_mark: |      [C language](Clang.md#preset-env)       |
+|  3   |         [C language](doc/Clang.md)          | :white_check_mark: | :white_check_mark: |      [C language](doc/Clang.md#preset-env)       |
 |  4   |           [Java](doc/Java.md)           | :white_check_mark: | :white_check_mark: |        [Java](doc/Java.md#preset-env)        |
 |  5   |         [NodeJS](doc/NodeJS.md)         | :white_check_mark: | :white_check_mark: |                                              |
 |  6   |     [TypeScript](doc/TypeScript.md)     | :white_check_mark: |                    |                                              |
