@@ -19,7 +19,7 @@ nix-channel --update
 ```
 2. 更改build 缓存
 ```
-sudo vi /etc/nix/nix.conf#
+sudo vi /etc/nix/nix.conf
 # 最后一行添加
 substituters = https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store https://cache.nixos.org/
 ```
@@ -72,5 +72,64 @@ pkgs.mkShell {
  备注： 初次执行比较慢，可通过 `nix-shell -v` 查看日志，另外后续进入时，为避免从substituters查询，可以使用
  `nix-shell --no-substitute` 快速进入shell环境
 
+## 支持语言说明
+
+| 序号 |                 支持语言                  |       支持LSP       |     支持测试用例     |                    预置环境                    |
+| :--: | :-------------------------------------: | :----------------: | :----------------: | :------------------------------------------: |
+|  1   |           [bash](doc/bash.md)           |                    |                    |                                              |
+|  2   |            [C++](doc/C++.md)            |                    | :white_check_mark: |         [C++](doc/C++.md#preset-env)         |
+|  3   |         [C language](Clang.md)          | :white_check_mark: | :white_check_mark: |      [C language](Clang.md#preset-env)       |
+|  4   |           [Java](doc/Java.md)           | :white_check_mark: | :white_check_mark: |        [Java](doc/Java.md#preset-env)        |
+|  5   |         [NodeJS](doc/NodeJS.md)         | :white_check_mark: | :white_check_mark: |                                              |
+|  6   |     [TypeScript](doc/TypeScript.md)     | :white_check_mark: |                    |                                              |
+|  7   |         [Golang](doc/Golang.md)         | :white_check_mark: | :white_check_mark: |                                              |
+|  8   |    [Objective-C](doc/Objective-C.md)    |                    |                    | [Objective-C](doc/Objective-C.md#preset-env) |
+|  9   |            [PHP](doc/PHP.md)            | :white_check_mark: | :white_check_mark: |                                              |
+|  10  |    [HTML/CSS/JS](doc/HTML-CSS-JS.md)    |                    |                    |                                              |
+|  11  |          [MySQL](doc/MySQL.md)          |                    |                    |                                              |
+|  12  |        [Python2](doc/Python2.md)        | :white_check_mark: | :white_check_mark: |     [Python2](doc/Python2.md#preset-env)     |
+|  13  |        [Python3](doc/Python3.md)        | :white_check_mark: | :white_check_mark: |     [Python3](doc/Python3.md#preset-env)     |
+|  14  |          [Ruby2](doc/Ruby2.md)          | :white_check_mark: | :white_check_mark: |       [Ruby2](doc/Ruby2.md#preset-env)       |
+|  15  |          [Ruby3](doc/Ruby3.md)          | :white_check_mark: | :white_check_mark: |       [Ruby3](doc/Ruby3.md#preset-env)       |
+|  16  |  [Assembly(GAS)](doc/Assembly(GAS).md)  |                    |                    |                                              |
+|  17  | [Assembly(NASM)](doc/Assembly(NASM).md) |                    |                    |                                              |
+|  18  |        [Clojure](doc/Clojure.md)        |                    |                    |                                              |
+|  19  |   [CoffeeScript](doc/CoffeeScript.md)   |                    |                    |                                              |
+|  20  |             [C#](doc/C#.md)             |                    |                    |                                              |
+|  21  |           [Dart](doc/Dart.md)           | :white_check_mark: |                    |                                              |
+|  22  |         [Elixir](doc/Elixir.md)         |                    |                    |                                              |
+|  23  |         [Erlang](doc/Erlang.md)         |                    |                    |                                              |
+|  24  |        [Haskell](doc/Haskell.md)        |                    |                    |                                              |
+|  25  |         [Kotlin](doc/Kotlin.md)         |                    |                    |                                              |
+|  26  |            [Lua](doc/Lua.md)            |                    | :white_check_mark: |                                              |
+|  27  |          [OCaml](doc/OCaml.md)          |                    |                    |                                              |
+|  28  |           [Perl](doc/Perl.md)           |                    |                    |                                              |
+|  29  |              [R](doc/R.md)              |                    |                    |                                              |
+|  30  |           [Rust](doc/Rust.md)           |                    |                    |                                              |
+|  31  |          [Scala](doc/Scala.md)          |                    |                    |                                              |
+|  32  |          [Swift](doc/Swift.md)          |                    |                    |                                              |
+|  33  |   [Visual Basic](doc/VisualBasic.md)    |                    |                    |                                              |
+|  34  |        [Verilog](doc/Verilog.md)        |                    | :white_check_mark: |                                              |
+|  35  |           [VHDL](doc/VHDL.md)           |                    |                    |                                              |
 
 
+
+# 参考资料
+
+[搜索nix包](https://search.nixos.org/)
+
+[nixpkgs 仓库](https://github.com/NixOS/nixpkgs)
+[nixpkgs-replit replit仓库](https://github.com/replit/nixpkgs-replit)
+[replit官网](https://replit.com/)
+
+[nix pills](https://nixos.org/nixos/nix-pills/)
+
+[nix-by-example](https://ops.functionalalgebra.com/nix-by-example/)
+
+[Nix tutorial](https://nix-tutorial.gitlabpages.inria.fr/nix-tutorial/index.html)
+
+[Nix Man Page](https://www.mankier.com/1/nix-shell#--no-build-hook)
+
+
+
+待补充...
