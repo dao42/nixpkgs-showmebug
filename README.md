@@ -77,13 +77,13 @@ pkgs.mkShell {
 | 序号 |                 支持语言                  |       支持LSP       |     支持测试用例     |                    预置环境                    |
 | :--: | :-------------------------------------: | :----------------: | :----------------: | :------------------------------------------: |
 |  1   |           [bash](doc/bash.md)           |                    |                    |                                              |
-|  2   |            [C++](doc/C++.md)            |                    | :white_check_mark: |         [C++](doc/C++.md#preset-env)         |
+|  2   |            [C++](doc/C++.md)            | :white_check_mark: | :white_check_mark: |         [C++](doc/C++.md#preset-env)         |
 |  3   |         [C language](Clang.md)          | :white_check_mark: | :white_check_mark: |      [C language](Clang.md#preset-env)       |
 |  4   |           [Java](doc/Java.md)           | :white_check_mark: | :white_check_mark: |        [Java](doc/Java.md#preset-env)        |
 |  5   |         [NodeJS](doc/NodeJS.md)         | :white_check_mark: | :white_check_mark: |                                              |
 |  6   |     [TypeScript](doc/TypeScript.md)     | :white_check_mark: |                    |                                              |
 |  7   |         [Golang](doc/Golang.md)         | :white_check_mark: | :white_check_mark: |                                              |
-|  8   |    [Objective-C](doc/Objective-C.md)    |                    |                    | [Objective-C](doc/Objective-C.md#preset-env) |
+|  8   |    [Objective-C](doc/Objective-C.md)    | :white_check_mark: |                    | [Objective-C](doc/Objective-C.md#preset-env) |
 |  9   |            [PHP](doc/PHP.md)            | :white_check_mark: | :white_check_mark: |                                              |
 |  10  |    [HTML/CSS/JS](doc/HTML-CSS-JS.md)    |                    |                    |                                              |
 |  11  |          [MySQL](doc/MySQL.md)          |                    |                    |                                              |
@@ -95,7 +95,7 @@ pkgs.mkShell {
 |  17  | [Assembly(NASM)](doc/Assembly(NASM).md) |                    |                    |                                              |
 |  18  |        [Clojure](doc/Clojure.md)        |                    |                    |                                              |
 |  19  |   [CoffeeScript](doc/CoffeeScript.md)   |                    |                    |                                              |
-|  20  |             [C#](doc/C#.md)             |                    |                    |                                              |
+|  20  |             [C#](doc/C#.md)             | :white_check_mark: |                    |                                              |
 |  21  |           [Dart](doc/Dart.md)           | :white_check_mark: |                    |                                              |
 |  22  |         [Elixir](doc/Elixir.md)         |                    |                    |                                              |
 |  23  |         [Erlang](doc/Erlang.md)         |                    |                    |                                              |
@@ -105,7 +105,7 @@ pkgs.mkShell {
 |  27  |          [OCaml](doc/OCaml.md)          |                    |                    |                                              |
 |  28  |           [Perl](doc/Perl.md)           |                    |                    |                                              |
 |  29  |              [R](doc/R.md)              |                    |                    |                                              |
-|  30  |           [Rust](doc/Rust.md)           |                    |                    |                                              |
+|  30  |           [Rust](doc/Rust.md)           | :white_check_mark: |                    |                                              |
 |  31  |          [Scala](doc/Scala.md)          |                    |                    |                                              |
 |  32  |          [Swift](doc/Swift.md)          |                    |                    |                                              |
 |  33  |   [Visual Basic](doc/VisualBasic.md)    |                    |                    |                                              |
