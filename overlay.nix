@@ -1,7 +1,6 @@
 self: super:
 
 with super.lib;
-with super.python39Packages;
 
 let
   nodePackages = self.callPackage ./pkgs/node-packages {
