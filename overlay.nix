@@ -1,6 +1,7 @@
 self: super:
 
 with super.lib;
+with super.python39Packages;
 
 let
   nodePackages = self.callPackage ./pkgs/node-packages {
@@ -56,6 +57,8 @@ in
 
   showmebugPackages = rec {
     phpunit = self.callPackage ./pkgs/phpunit { };
+
+    python2-lsp-server = self.callPackage ./pkgs/python2-lsp-server { };
   };
 }
 
