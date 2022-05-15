@@ -56,6 +56,14 @@ in
 
   showmebugPackages = rec {
     phpunit = self.callPackage ./pkgs/phpunit { };
+
+    php74 = super.php74;
+    composer = super.php74Packages.composer;
+
+    php-language-server = self.callPackage ./pkgs/php-language-server { 
+      php74 = php74;
+      composer = composer;
+    };
   };
 }
 
