@@ -73,6 +73,27 @@ pkgs.mkShell {
  备注： 初次执行比较慢，可通过 `nix-shell -v` 查看日志，另外后续进入时，为避免从substituters查询，可以使用
  `nix-shell --no-substitute` 快速进入shell环境
 
+## 本地代理
+
+基于nginx文件服务器，对与下载比较慢的文件进行托管。
+```
+http://119.91.141.92:8080
+```
+
+### 基于本地代理的nix-channel设置
+
+终端执行添加channel：
+```
+#nix-channel --add http://119.91.141.92:8080/nixpkgs-showmebug/{branch|commit etc.}.tar.gz  nixpkgs-showmebug
+nix-channel --add http://119.91.141.92:8080/nixpkgs-showmebug/nixpkgs-showmebug-feature-change-url-to-local-nginx.tar.gz  nixpkgs-showmebug
+nix-channel --update
+```
+
+使用时直接在nix文件头部指定channel
+```nix
+{ pkgs ? import <nixpkgs-showmebug> {} }:
+    # 环境设置表达式
+```
 ## 支持语言说明
 
 | 序号 |                 支持语言                  |       支持LSP       |     支持测试用例     |                    预置环境                    |
@@ -108,7 +129,7 @@ pkgs.mkShell {
 |  29  |              [R](doc/R.md)              |                    |                    |                                              |
 |  30  |           [Rust](doc/Rust.md)           | :white_check_mark: | :white_check_mark: |                                              |
 |  31  |          [Scala](doc/Scala.md)          |                    |                    |                                              |
-|  32  |          [Swift](doc/Swift.md)          |                    |                    |                                              |
+|  32  |          [Swift](doc/Swift.md)          | :white_check_mark: |                    |                                              |
 |  33  |   [Visual Basic](doc/VisualBasic.md)    |                    |                    |                                              |
 |  34  |        [Verilog](doc/Verilog.md)        |                    | :white_check_mark: |                                              |
 |  35  |           [VHDL](doc/VHDL.md)           |                    |                    |                                              |

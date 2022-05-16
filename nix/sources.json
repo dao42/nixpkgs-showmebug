@@ -20,7 +20,7 @@
         "rev": "dff5496b12817e3d019983827c4b7ba7beb96580",
         "sha256": "14hmk545rhlr03lmagkbh42m63wqdmqbw502fnrqgcxmns657nds",
         "type": "tarball",
-        "url": "https://github.com/nixos/nixpkgs/archive/nixpkgs-21.11-dff5496b12817e3d019983827c4b7ba7beb96580.tar.gz",
+        "url": "http://119.91.141.92:8080/nixpkgs/nixpkgs-21.11-dff5496b12817e3d019983827c4b7ba7beb96580.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs-legacy": {
@@ -31,7 +31,7 @@
         "rev": "503209808cd613daed238e21e7a18ffcbeacebe3",
         "sha256": "09yxyfd1gzcwjs8zm8yhvqpgdzxdj6l4yvjbz675nkk3nw6iyavk",
         "type": "tarball",
-        "url": "https://github.com/nixos/nixpkgs/archive/503209808cd613daed238e21e7a18ffcbeacebe3.tar.gz",
+        "url": "http://119.91.141.92:8080/nixpkgs/nixpkgs-legacy-503209808cd613daed238e21e7a18ffcbeacebe3.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs-unstable": {
@@ -43,7 +43,7 @@
         "rev": "cbe587c735b734405f56803e267820ee1559e6c1",
         "sha256": "0jii8slqbwbvrngf9911z3al1s80v7kk8idma9p9k0d5fm3g4z7h",
         "type": "tarball",
-        "url": "https://github.com/nixos/nixpkgs/archive/cbe587c735b734405f56803e267820ee1559e6c1.tar.gz",
+        "url": "http://119.91.141.92:8080/nixpkgs/nixpkgs-unstable-cbe587c735b734405f56803e267820ee1559e6c1.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
