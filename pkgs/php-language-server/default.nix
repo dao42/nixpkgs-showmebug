@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   version = "5.4.6.1";
   
   src = fetchFromGitHub {
-    owner = "YushuaiLI";
+    owner = "dao42";
     repo = pname;
     rev = "v${version}";
     sha256 = "0qzin0fcwgnrwdvxpwaibjlzbiv8c6hifgi2jgrbgasj2sz9zvbp";
