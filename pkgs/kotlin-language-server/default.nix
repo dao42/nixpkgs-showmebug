@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   version = "1.3.0";
   
   src = fetchurl {
-    url = "https://github.com/dao42/kotlin-language-server/releases/download/1.3.1/server.tar.gz";
+    url = "http://119.91.141.92:8080/language-source/kotlin/server.tar.gz";
     sha256 = "sha256-DApQaZN0smwEdyd+YWKSiJJwCkb9uFac547N3RGwAWk=";
   };
 

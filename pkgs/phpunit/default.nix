@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   version = "9.5.20";
   
   src = fetchurl {
-    url = "https://phar.phpunit.de/phpunit-9.5.20.phar";
+    url = "http://119.91.141.92:8080/language-source/php/phpunit-9.5.20.phar";
     sha256 = "6becad2da5c37f5ad101cc665ef05a2f1a6a45d2427c8edcc74f72c92fb1e05a";
   };
 
