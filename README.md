@@ -98,7 +98,7 @@ pkgs.mkShell {
 |  20  |             [C#](doc/C#.md)             | :white_check_mark: |                    |                                              |
 |  21  |           [Dart](doc/Dart.md)           | :white_check_mark: |                    |                                              |
 |  22  |         [Elixir](doc/Elixir.md)         |                    |                    |                                              |
-|  23  |         [Erlang](doc/Erlang.md)         |                    |                    |                                              |
+|  23  |         [Erlang](doc/Erlang.md)         | :white_check_mark: |                    |                                              |
 |  24  |        [Haskell](doc/Haskell.md)        |                    |                    |                                              |
 |  25  |         [Kotlin](doc/Kotlin.md)         |                    |                    |                                              |
 |  26  |            [Lua](doc/Lua.md)            |                    | :white_check_mark: |                                              |
