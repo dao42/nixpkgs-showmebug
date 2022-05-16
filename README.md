@@ -46,7 +46,7 @@ https://github.com/dao42/nixpkgs-showmebug/archive/refs/tags/{tag}.tar.gz
 
 终端执行添加channel：
 ```
-nix-channel --add https://github.com/dao42/nixpkgs-showmebug/archive/main.tar.gz  showmebug-nixpkgs
+nix-channel --add https://github.com/dao42/nixpkgs-showmebug/archive/main.tar.gz  nixpkgs-showmebug
 nix-channel --update
 ```
 
