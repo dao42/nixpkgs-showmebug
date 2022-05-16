@@ -15,6 +15,7 @@ channels of the same name.
 
 ```
 nix-channel --add https://mirrors.tuna.tsinghua.edu.cn/nix-channels/nixpkgs-21.11-darwin  nixpkgs
+nix-channel --add https://mirrors.tuna.tsinghua.edu.cn/nix-channels/nixpkgs-unstable nixpkgs-unstable  # 最新版的包一般会优先在这个通道
 nix-channel --update
 ```
 2. 更改build 缓存
@@ -85,7 +86,7 @@ pkgs.mkShell {
 |  7   |         [Golang](doc/Golang.md)         | :white_check_mark: | :white_check_mark: |                                              |
 |  8   |    [Objective-C](doc/Objective-C.md)    | :white_check_mark: |                    | [Objective-C](doc/Objective-C.md#preset-env) |
 |  9   |            [PHP](doc/PHP.md)            | :white_check_mark: | :white_check_mark: |                                              |
-|  10  |    [HTML/CSS/JS](doc/HTML-CSS-JS.md)    |                    |                    |                                              |
+|  10  |    [HTML/CSS/JS](doc/HTML-CSS-JS.md)    | :white_check_mark: |                    |                                              |
 |  11  |          [MySQL](doc/MySQL.md)          |                    |                    |                                              |
 |  12  |        [Python2](doc/Python2.md)        | :white_check_mark: | :white_check_mark: |     [Python2](doc/Python2.md#preset-env)     |
 |  13  |        [Python3](doc/Python3.md)        | :white_check_mark: | :white_check_mark: |     [Python3](doc/Python3.md#preset-env)     |
@@ -100,12 +101,12 @@ pkgs.mkShell {
 |  22  |         [Elixir](doc/Elixir.md)         |                    |                    |                                              |
 |  23  |         [Erlang](doc/Erlang.md)         | :white_check_mark: |                    |                                              |
 |  24  |        [Haskell](doc/Haskell.md)        |                    |                    |                                              |
-|  25  |         [Kotlin](doc/Kotlin.md)         |                    |                    |                                              |
+|  25  |         [Kotlin](doc/Kotlin.md)         | :white_check_mark: |                    |                                              |
 |  26  |            [Lua](doc/Lua.md)            |                    | :white_check_mark: |                                              |
 |  27  |          [OCaml](doc/OCaml.md)          |                    |                    |                                              |
 |  28  |           [Perl](doc/Perl.md)           |                    |                    |                                              |
 |  29  |              [R](doc/R.md)              |                    |                    |                                              |
-|  30  |           [Rust](doc/Rust.md)           | :white_check_mark: |                    |                                              |
+|  30  |           [Rust](doc/Rust.md)           | :white_check_mark: | :white_check_mark: |                                              |
 |  31  |          [Scala](doc/Scala.md)          |                    |                    |                                              |
 |  32  |          [Swift](doc/Swift.md)          |                    |                    |                                              |
 |  33  |   [Visual Basic](doc/VisualBasic.md)    |                    |                    |                                              |

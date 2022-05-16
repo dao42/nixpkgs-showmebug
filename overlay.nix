@@ -64,6 +64,11 @@ in
       php74 = php74;
       composer = composer;
     };
+    
+    jdk = super.jdk;
+    kotlin-language-server = self.callPackage ./pkgs/kotlin-language-server { 
+      jdk = jdk;
+    };
   };
 }
 
