@@ -103,7 +103,7 @@ nix-channel --update
 |  3   |         [C language](doc/Clang.md)      | :white_check_mark: | :white_check_mark: |      [C language](doc/Clang.md#preset-env)       |
 |  4   |           [Java](doc/Java.md)           | :white_check_mark: | :white_check_mark: |        [Java](doc/Java.md#preset-env)        |
 |  5   |         [NodeJS](doc/NodeJS.md)         | :white_check_mark: | :white_check_mark: |                                              |
-|  6   |     [TypeScript](doc/TypeScript.md)     | :white_check_mark: |                    |                                              |
+|  6   |     [TypeScript](doc/TypeScript.md)     | :white_check_mark: | :white_check_mark: |                                              |
 |  7   |         [Golang](doc/Golang.md)         | :white_check_mark: | :white_check_mark: |                                              |
 |  8   |    [Objective-C](doc/Objective-C.md)    | :white_check_mark: |                    | [Objective-C](doc/Objective-C.md#preset-env) |
 |  9   |            [PHP](doc/PHP.md)            | :white_check_mark: | :white_check_mark: |                                              |
