@@ -115,7 +115,7 @@ nix-channel --update
 |  15  |          [Ruby3](doc/Ruby3.md)          | :white_check_mark: | :white_check_mark: |       [Ruby3](doc/Ruby3.md#preset-env)       |
 |  16  |  [Assembly(GAS)](doc/Assembly(GAS).md)  |                    |                    |                                              |
 |  17  | [Assembly(NASM)](doc/Assembly(NASM).md) |                    |                    |                                              |
-|  18  |        [Clojure](doc/Clojure.md)        |                    |                    |                                              |
+|  18  |        [Clojure](doc/Clojure.md)        | :white_check_mark: |                    |                                              |
 |  19  |   [CoffeeScript](doc/CoffeeScript.md)   |                    |                    |                                              |
 |  20  |             [C#](doc/C#.md)             | :white_check_mark: |                    |                                              |
 |  21  |           [Dart](doc/Dart.md)           | :white_check_mark: |                    |                                              |
@@ -123,7 +123,7 @@ nix-channel --update
 |  23  |         [Erlang](doc/Erlang.md)         | :white_check_mark: |                    |                                              |
 |  24  |        [Haskell](doc/Haskell.md)        |                    |                    |                                              |
 |  25  |         [Kotlin](doc/Kotlin.md)         | :white_check_mark: |                    |                                              |
-|  26  |            [Lua](doc/Lua.md)            |                    | :white_check_mark: |                                              |
+|  26  |            [Lua](doc/Lua.md)            | :white_check_mark: | :white_check_mark: |                                              |
 |  27  |          [OCaml](doc/OCaml.md)          |                    |                    |                                              |
 |  28  |           [Perl](doc/Perl.md)           |                    |                    |                                              |
 |  29  |              [R](doc/R.md)              |                    |                    |                                              |
