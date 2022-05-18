@@ -78,7 +78,7 @@ in stdenv.mkDerivation rec {
         --run 'MEMORY_LIMIT_BYTES=$(cat /sys/fs/cgroup/memory/memory.limit_in_bytes)' \
         --run 'MEMORY_LIMIT_MB=$(expr $MEMORY_LIMIT_BYTES / 1048576)' \
         --run 'LSP_MAX_HEAP=$(expr $MEMORY_LIMIT_MB / 4)' \
-        --run 'LSP_MAX_HEAP=$(( $LSP_MAX_HEAP > 512 ? $LSP_MAX_HEAP : 512 ))' \
+        --run 'LSP_MAX_HEAP=$(( $LSP_MAX_HEAP > 1024 ? $LSP_MAX_HEAP : 1024 ))' \
         --run 'export JAVA_OPTS="-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx${"\${LSP_MAX_HEAP}"}m -Xms100m $JAVA_OPTS"' \
         --add-flags "-Declipse.application=org.eclipse.jdt.ls.core.id1" \
         --add-flags "-Dosgi.bundles.defaultStartLevel=4" \
