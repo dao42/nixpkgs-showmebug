@@ -56,6 +56,7 @@ in
 
   showmebugPackages = rec {
     phpunit = self.callPackage ./pkgs/phpunit { };
+    rust-analyzer = self.callPackage ./pkgs/rust-analyzer { };
 
     php74 = super.php74;
     composer = super.php74Packages.composer;
