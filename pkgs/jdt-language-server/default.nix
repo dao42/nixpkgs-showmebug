@@ -10,7 +10,7 @@ let
 
 in stdenv.mkDerivation rec {
   pname = "jdt-language-server";
-  version = "1.9.3";
+  version = "20220908.02";
 
   src = fetchurl {
     url = "http://119.91.141.92:8080/language-source/java/jdt-language-server-1.9.0-202203031534.tar.gz";
@@ -74,10 +74,6 @@ in stdenv.mkDerivation rec {
       makeWrapper ${jdk}/bin/java $out/bin/jdt-language-server \
         --run "mkdir -p ${runtimePath}" \
         --run "install -Dm 1777 -t ${runtimePath}/config $out/share/config/*" \
-        --run 'MEMORY_LIMIT_BYTES=$(cat /sys/fs/cgroup/memory/memory.limit_in_bytes)' \
-        --run 'MEMORY_LIMIT_MB=$(expr $MEMORY_LIMIT_BYTES / 1048576)' \
-        --run 'LSP_MAX_HEAP=$(expr $MEMORY_LIMIT_MB / 4)' \
-        --run 'LSP_MAX_HEAP=$(( $LSP_MAX_HEAP > 1024 ? $LSP_MAX_HEAP : 1024 ))' \
         --run 'export JAVA_OPTS="-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1024m -Xms100m $JAVA_OPTS"' \
         --add-flags "-Declipse.application=org.eclipse.jdt.ls.core.id1" \
         --add-flags "-Dosgi.bundles.defaultStartLevel=4" \
