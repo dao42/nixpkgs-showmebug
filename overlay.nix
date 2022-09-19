@@ -54,7 +54,7 @@ in
     java-language-server = self.callPackage ./pkgs/java-language-server { };
   };
 
-  showmebugPackages = rec {
+  paaspkgs = rec {
     phpunit = self.callPackage ./pkgs/phpunit { };
     rust-analyzer = self.callPackage ./pkgs/rust-analyzer { };
 
@@ -70,6 +70,10 @@ in
     kotlin-language-server = self.callPackage ./pkgs/kotlin-language-server { 
       jdk = jdk;
     };
+    cppdap = self.callPackage ./pkgs/cppdap { };
   };
+
+  showmebugPackages = self.paaspkgs;
+
 }
 
