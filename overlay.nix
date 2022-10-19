@@ -71,6 +71,8 @@ in
       jdk = jdk;
     };
     cppdap = self.callPackage ./pkgs/cppdap { };
+
+    rfbproxy = self.callPackage ./pkgs/rfbproxy { };
   };
 
   showmebugPackages = self.paaspkgs;
