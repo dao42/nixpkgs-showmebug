@@ -13,7 +13,7 @@ in stdenv.mkDerivation rec {
   version = "20220908.02";
 
   src = fetchurl {
-    url = "http://119.91.141.92:8080/language-source/java/jdt-language-server-1.9.0-202203031534.tar.gz";
+    url = "http://106.52.58.179:8080/language-source/java/jdt-language-server-1.9.0-202203031534.tar.gz";
     sha256 = "1irg8fzrw016js9zbcnq35lagb66zdgs800y0v8pz09vrcjikbxq";
   };
 

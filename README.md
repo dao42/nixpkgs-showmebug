@@ -77,15 +77,15 @@ pkgs.mkShell {
 
 基于nginx文件服务器，对与下载比较慢的文件进行托管。
 ```
-http://119.91.141.92:8080
+http://106.52.58.179:8080
 ```
 
 ### 基于本地代理的nix-channel设置
 
 终端执行添加channel：
 ```
-#nix-channel --add http://119.91.141.92:8080/nixpkgs-showmebug/{branch|commit etc.}.tar.gz  nixpkgs-showmebug
-nix-channel --add http://119.91.141.92:8080/nixpkgs-showmebug/nixpkgs-showmebug-feature-change-url-to-local-nginx.tar.gz  nixpkgs-showmebug
+#nix-channel --add http://106.52.58.179:8080/nixpkgs-showmebug/{branch|commit etc.}.tar.gz  nixpkgs-showmebug
+nix-channel --add http://106.52.58.179:8080/nixpkgs-showmebug/nixpkgs-showmebug-feature-change-url-to-local-nginx.tar.gz  nixpkgs-showmebug
 nix-channel --update
 ```
 

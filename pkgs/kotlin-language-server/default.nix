@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   version = "1.3.0";
   
   src = fetchurl {
-    url = "http://119.91.141.92:8080/language-source/kotlin/server.tar.gz";
+    url = "http://106.52.58.179:8080/language-source/kotlin/server.tar.gz";
     sha256 = "sha256-DApQaZN0smwEdyd+YWKSiJJwCkb9uFac547N3RGwAWk=";
   };
 
