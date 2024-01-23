@@ -4,8 +4,15 @@ with super.lib;
 
 let
   nodePackages = self.callPackage ./pkgs/node-packages {
-    nodejs = super."nodejs-14_x";
-  };
+      nodejs = super."nodejs-14_x";
+    };
+
+  repomap = nodePackages."repomap-0.0.3".override {
+      nativeBuildInputs = [ nodePackages."prebuild-install-7.1.1" ];
+      preBuild = ''
+        npm config set registry https://registry.npmmirror.com
+      '';
+    };
 
   # We have our own version of typescript-language-server here because the version in upstream nixpkgs
   # has a bug which is causing issues for code intelligence in node repls.
@@ -21,8 +28,11 @@ let
     };
 in
 {
+
   nodePackages = super.nodePackages // {
     inherit typescript-language-server;
+    inherit repomap;
+    
   };
 
   replitPackages = rec {
