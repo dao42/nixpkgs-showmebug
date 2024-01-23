@@ -1,5 +1,6 @@
 [
-  { "repomap": "0.0.2" },
+  { "prebuild-install": "7.1.1" },
+  { "repomap": "0.0.3" },
   { "coffeescript": "2.6.1" },
   { "jest-cli": "23.6.0" },
   { "ts-node": "10.4.0" },
