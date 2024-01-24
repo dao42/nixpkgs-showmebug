@@ -4,7 +4,7 @@ with super.lib;
 
 let
   nodePackages = self.callPackage ./pkgs/node-packages {
-      nodejs = super."nodejs-14_x";
+      nodejs = super."nodejs-16_x";
     };
 
   repomap = nodePackages."repomap-0.0.3".override {
